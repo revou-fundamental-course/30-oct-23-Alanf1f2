@@ -1,0 +1,65 @@
+<!-- Nama: Ibnu Fadhlan
+Discord: Alanf1f2
+Email: IbnuFadhlan0401@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <p>Silakan masukkan berat badan dan tinggi badan Anda untuk menghitung BMI.</p>
+        <div class="calculator">
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" id="weight" placeholder="Masukkan berat badan">
+            <label for="height">Tinggi Badan (cm):</label>
+            <input type="number" id="height" placeholder="Masukkan tinggi badan">
+            <label for="gender">Jenis Kelamin:</label>
+            <select id="gender">
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <div></div>
+            <button onclick="calculateBMI()">Hitung BMI</button>
+            <div id="result"></div>
+            <div id="explanation"></div>
+        </div>
+    </div>
+    <div class="tabel">
+        <h2>Keterangan BMI dan Status Berat Badan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Status Berat Badan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kurang dari 18.5</td>
+                        <td>Kurus</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Normal</td>
+                    </tr>
+                    <tr>
+                        <td>25 - 29.9</td>
+                        <td>Gemuk</td>
+                    </tr>
+                    <tr>
+                        <td>30 atau lebih</td>
+                        <td>Obesitas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
